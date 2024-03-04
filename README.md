@@ -1,6 +1,6 @@
 # Awesome-Code-LLM
 
-This is the repo for our survey [Unifying the Perspectives of NLP and Software Engineering: A Survey on Language Models for Code](https://arxiv.org/abs/2311.07989) - a comprehensive review of LLM researches for code. Works in each category are ordered chronologically. If you have a basic understanding of machine learning but are new to NLP, we also provide a list of recommended readings in [section 6](#6-recommended-readings).
+This is the repo for the survey [Unifying the Perspectives of NLP and Software Engineering: A Survey on Language Models for Code](https://arxiv.org/abs/2311.07989) - a comprehensive review of LLM researches for code. Works in each category are ordered chronologically. If you have a basic understanding of machine learning but are new to NLP, we also provide a list of recommended readings in [section 6](#6-recommended-readings).
 
 <p align='center'>
 <img src='imgs/overview.png' style='width: 80%; '>
@@ -8,55 +8,39 @@ This is the repo for our survey [Unifying the Perspectives of NLP and Software E
 
 ## Table of Contents
 
-1. [Surveys](#1-surveys)
-
-2. [Models](#2-models)
-
-   2.1 [Off-the-Shelf LLM](#21-off-the-shelf-llm)
-
-   2.2 [Existing LLM Further Trained on Code](#22-existing-llm-further-trained-on-code)
-
-   2.3 [General Pretraining on Code](#23-general-pretraining-on-code)
-
-   - [Encoder](#encoder)
-   - [Decoder](#decoder)
-   - [Encoder-Decoder](#encoder-decoder)
-   - [UniLM](#unilm)
-
-   <!-- prettier ignore -->
-
-   2.4 [Instruction Fine-Tuning on Code](#24-instruction-fine-tuning-on-code)
-
-   2.5 [Reinforcement Learning on Code](#25-reinforcement-learning-on-code)
-
-3. [When Coding Meets Reasoning](#3-when-coding-meets-reasoning)
-
-   3.1 [Coding for Reasoning](#31-coding-for-reasoning)
-
-   3.2 [Coding via Planning](#32-coding-via-planning)
-
-4. [Methods/Models for Downstream Tasks](#4-methodsmodels-for-downstream-tasks)
-
-5. [Datasets](#5-datasets)
-
-   5.1 [Pretraining](#51-pretraining)
-
-   5.2 [Benchmarks](#52-benchmarks)
-
-   - [Program Synthesis](#program-synthesis)
-   - [Text-to-SQL](#text-to-sql)
-   - [Code Translation](#code-translation)
-   - [Program Repair](#program-repair)
-   - [Code Summarization](#code-summarization)
-   - [Defect/Vulnerability Detection](#defectvulnerability-detection)
-   - [Code Retrieval](#code-retrieval)
-   - [Type Inference](#type-inference)
-   - [Commit Message Generation](#commit-message-generation)
-   - [Repo-Level Coding](#repo-level-coding)
-
-6. [Recommended Readings](#6-recommended-readings)
-
-7. [Citation](#citation)
+- [Awesome-Code-LLM](#awesome-code-llm)
+  - [Table of Contents](#table-of-contents)
+  - [1. Surveys](#1-surveys)
+  - [2. Models](#2-models)
+    - [2.1 Off-the-Shelf LLM](#21-off-the-shelf-llm)
+    - [2.2 Existing LLM Further Trained on Code](#22-existing-llm-further-trained-on-code)
+    - [2.3 General Pretraining on Code](#23-general-pretraining-on-code)
+      - [Encoder](#encoder)
+      - [Decoder](#decoder)
+      - [Encoder-Decoder](#encoder-decoder)
+      - [UniLM](#unilm)
+    - [2.4 Instruction Fine-Tuning on Code](#24-instruction-fine-tuning-on-code)
+    - [2.5 Reinforcement Learning on Code](#25-reinforcement-learning-on-code)
+  - [3. When Coding Meets Reasoning](#3-when-coding-meets-reasoning)
+    - [3.1 Coding for Reasoning](#31-coding-for-reasoning)
+    - [3.2 Coding via Planning](#32-coding-via-planning)
+  - [4. Methods/Models for Downstream Tasks](#4-methodsmodels-for-downstream-tasks)
+  - [5. Datasets](#5-datasets)
+    - [5.1 Pretraining](#51-pretraining)
+    - [5.2 Benchmarks](#52-benchmarks)
+      - [Program Synthesis](#program-synthesis)
+      - [Text-to-SQL](#text-to-sql)
+      - [Code Translation](#code-translation)
+      - [Program Repair](#program-repair)
+      - [Code Summarization](#code-summarization)
+      - [Defect/Vulnerability Detection](#defectvulnerability-detection)
+      - [Code Retrieval](#code-retrieval)
+      - [Type Inference](#type-inference)
+      - [Commit Message Generation](#commit-message-generation)
+      - [Repo-Level Coding](#repo-level-coding)
+      - [Other tasks are coming soon!](#other-tasks-are-coming-soon)
+  - [6. Recommended Readings](#6-recommended-readings)
+  - [Citation](#citation)
 
 ## 1. Surveys
 
